@@ -1,6 +1,6 @@
 {
-  "name": "open-music-consumer",
-  "version": "1.0.0",
+  "name": "open-music-consumer-v1",
+  "version": "3.0.0",
   "description": "OpenMusic API Consumer",
   "main": "src/consumer.js",
   "type": "module",
