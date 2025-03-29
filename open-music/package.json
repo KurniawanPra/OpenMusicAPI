@@ -1,0 +1,49 @@
+{
+  "name": "openmusicapiv3",
+  "version": "1.0.0",
+  "description": "OpenMusic API v3 - A RESTful API for music management",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "lint": "eslint ./src",
+    "migrate-up": "node -r dotenv/config node_modules/node-pg-migrate/bin/node-pg-migrate up",
+    "migrate-down": "node -r dotenv/config node_modules/node-pg-migrate/bin/node-pg-migrate down",
+    "test": "newman run ./test/v3/colec.json -e ./test/v3/envi.json"
+  },
+  "keywords": [
+    "music",
+    "api",
+    "hapi",
+    "postgresql",
+    "redis",
+    "rabbitmq"
+  ],
+  "author": "MuhammadRK",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.2",
+    "@hapi/inert": "^7.1.0",
+    "@hapi/jwt": "^3.2.0",
+    "amqplib": "^0.10.3",
+    "auto-bind": "^4.0.0",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.3.1",
+    "joi": "^17.11.0",
+    "nanoid": "^4.0.2",
+    "node-pg-migrate": "^6.2.2",
+    "pg": "^8.11.3",
+    "redis": "^4.6.10"
+  },
+  "devDependencies": {
+    "eslint": "^8.53.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
