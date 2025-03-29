@@ -1,5 +1,5 @@
 {
-  "name": "openmusic-api",
+  "name": "openmusic-api-v1",
   "version": "1.0.0",
   "description": "OpenMusic API v1",
   "main": "src/server.js",
