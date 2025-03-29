@@ -1,6 +1,6 @@
 {
   "name": "openmusicapiv3",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "OpenMusic API v3 - A RESTful API for music management",
   "main": "src/server.js",
   "type": "module",
